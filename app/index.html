@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>test</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+</head>
+<body>
+
+  <div style="margin: 8px 8px;">
+    <div style="max-width: 600px; font-family: monospace; font-size: 11px;">
+      <div style="font-family: monospace; font-size: 18px; letter-spacing: 4px; font-weight: 600;">
+        Travelr.io
+      </div>
+
+      <div style="font-family: monospace; font-size: 12px; letter-spacing: 2px; font-weight: 300;">
+        Disrupting disruption
+      </div>
+
+      <div style="font-family: monospace; font-size: 12px; letter-spacing: 2px; font-weight: 300;">
+        Reinventing reinvention
+      </div>
+
+      <div style="font-family: monospace; font-size: 12px; letter-spacing: 2px; font-weight: 300;">
+        Revolutionizing revolution
+      </div>
+
+      <hr/>
+
+      <div>
+        <select class="form-control" multiple="multiple" style="height: 200px;" id="listMaster">
+        </select>
+      </div>
+
+      <div style="position: fixed; z-index: 99; width: 100%; height: 100%; top: 0px; left: 0px; background-color: rgba(255,255,255,0.75); text-align: center;" id="divEditBox">
+        <div style="display: inline-block; margin: 8px 8px; width: 320px;">
+          <div class="form-group form-group-sm">
+            <label>City Name</label>
+            <input type="text" class="form-control" value='' id="txtName"/>
+          </div>
+          <div class="form-group form-group-sm">
+            <label>Price</label>
+            <input type="number" class="form-control" value=0 id="txtPrice"/>
+          </div>
+          <div class="form-group form-group-sm">
+            <label>Destination 1</label>
+            <select class="form-control" id="listDestination1"></select>
+          </div>
+          <div class="form-group form-group-sm">
+            <label>Destination 2</label>
+            <select class="form-control" id="listDestination2"></select>
+          </div>
+          <button type="button" class="btn btn-primary btn-sm btn-block" id="btnOk">
+            Ok
+          </button>
+        </div>
+      </div>
+
+      <hr/>
+
+      <div>
+        <button type="button" class="btn btn-primary btn-sm btn-block" id="btnAdd">
+          Add Item
+        </button>
+      </div>
+
+      <div>
+        <button type="button" class="btn btn-primary btn-sm btn-block" id="btnClone">
+          Clone Item
+        </button>
+      </div>
+
+      <div>
+        <button type="button" class="btn btn-primary btn-sm btn-block" id="btnDelete">
+          Delete Item
+        </button>
+      </div>
+
+      <div>
+        <button type="button" class="btn btn-primary btn-sm btn-block" id="btnEdit">
+          Edit Item
+        </button>
+      </div>
+
+      <div style="margin: 2px 8px;">&nbsp;</div>
+
+      <div>
+        <button type="button" class="btn btn-primary btn-sm btn-block" id="btnUndo">
+          Undo
+        </button>
+      </div>
+
+      <div>
+        <button type="button" class="btn btn-primary btn-sm btn-block" id="btnRedo">
+          Redo
+        </button>
+      </div>
+
+      <div style="margin: 2px 8px;">&nbsp;</div>
+
+      <div>
+        <button type="button" class="btn btn-primary btn-sm btn-block" id="btnSerialize">
+          Serialize
+        </button>
+      </div>
+
+      <div>
+        <button type="button" class="btn btn-primary btn-sm btn-block" id="btnDeserialize">
+          Deserialize
+        </button>
+      </div>
+
+      <div style="margin: 2px 8px;">&nbsp;</div>
+
+      <div>
+        Serialized JSON:
+      </div>
+
+      <div id="divJsonText">
+      </div>
+
+      <hr/>
+
+      <div>
+        <button type="button" class="btn btn-primary btn-sm btn-block" id="btnAdvTestData">
+          Load Test Data
+        </button>
+      </div>
+
+      <div style="margin: 4px 0px;">
+        A: <select class="form-control" id="listAdvA"></select>
+      </div>
+
+      <div style="margin: 4px 0px;">
+        B: <select class="form-control" id="listAdvB"></select>
+      </div>
+
+      <div>
+        <button type="button" class="btn btn-primary btn-sm btn-block" id="btnAdvAllDestinations">
+          All points reachable from A
+        </button>
+      </div>
+
+      <div>
+        <button type="button" class="btn btn-primary btn-sm btn-block" id="btnAdvAllOrigins">
+          All points which can reach A
+        </button>
+      </div>
+
+      <div>
+        <button type="button" class="btn btn-primary btn-sm btn-block" id="btnAdvExists">
+          Path exists from A to B
+        </button>
+      </div>
+
+      <div>
+        <button type="button" class="btn btn-primary btn-sm btn-block" id="btnAdvCheapest">
+          Cheapest path from A to B
+        </button>
+      </div>
+
+      <div style="margin: 2px 8px;">&nbsp;</div>
+
+      <div>
+        Output:
+      </div>
+
+      <div id="divAdvOutput">
+      </div>
+
+      <hr/>
+
+    </div>
+  </div>
+
+  <div style="margin: 8px 8px;">&nbsp;</div>
+
+</body>
+</html>
