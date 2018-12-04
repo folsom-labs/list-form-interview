@@ -1,22 +1,7 @@
-## Hello
-
-What
-
-### Hi
-
-Yes
-
-* *1*
-* *2*
-* *3*
-
+### To install dependencies and run: 
 ```bash
-brew install yarn
-yarn install
+npm install
+npm start
 ```
 
-```bash
-yarn start
-```
-
-`http://localhost:8080/`
+### Run the application at http://localhost:8080/
